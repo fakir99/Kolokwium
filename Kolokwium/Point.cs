@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Kolokwium
 {
-    class Program
+    class Point
     {
-        static void Main(string[] args)
-        { 
-        }
+
     }
 }

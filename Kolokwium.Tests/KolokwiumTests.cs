@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kolokwium
+namespace Kolokwium.Tests
 {
-    class Program
+    class KolokwiumTests
     {
-        static void Main(string[] args)
-        { 
-        }
     }
 }
