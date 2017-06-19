@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Kolokwium
 {
-    class Point
+    class Line
     {
-        public int x, y;
- 
-      public Point(int _x, int _y)
+        Point X, Y;
+
+        Line(Point x, Point y)
         {
-            x = _x;
-            y = _y;
+            X = x;
+            Y = y;
         }
+    }
 }
