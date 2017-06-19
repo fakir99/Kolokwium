@@ -8,23 +8,26 @@ namespace Kolokwium
 {
     class Calculator
     {
-        double Angle;
-       double CalculateAlpha(int x1, int y1, int x2, int y2 )
+         public double Angle;
+        public Line Line;
+      public double CalculateAlpha(Line line)
         {
-           return  Angle =  Math.Atan2(y2 - y1, x2 - x1) - Math.Atan2(0 - 0, 3 - 0);
+           return  Angle =  Math.Atan2(line.y2 - line.y1, line.x2 - line.x1) - Math.Atan2(0 - 0, 3 - 0);
         }
 
-        double CalculateBeta(int x1, int y1, int x2, int y2)
+        public double CalculateBeta(Line line)
         {
-            return  Angle = Math.Atan2(y2 - y1, x2 - x1) - Math.Atan2(4 - 0, 0 - 0);
+            return  Angle = Math.Atan2(line.y2 - line.y1, line.x2 - line.x1) - Math.Atan2(4 - 0, 0 - 0);
         }
-        double CalculateGamma(int x1, int y1, int x2, int y2)
+        public double CalculateGamma(Line line)
         {
-            return  Angle = Math.Atan2(y2 - y1, x2 - x1) - Math.Atan2( 0- 0, 3 - 0);
+            Angle = Math.Atan2(line.y2 - line.y1, line.x2 - line.x1) - Math.Atan2(0 - 0, 3 - 0);
+            return 180 - Angle;
         }
-        double CalculateEpsillon(int x1, int y1, int x2, int y2)
+        public double CalculateEpsillon(Line line)
         {
-            return  Angle = Math.Atan2(y2 - y1, x2 - x1) - Math.Atan2(0 - 0, 3 - 0);
+            Angle = Math.Atan2(line.y2 - line.y1, line.x2 - line.x1) - Math.Atan2(4 - 0, 0 - 0);
+            return 180 - Angle;
         }
 
 

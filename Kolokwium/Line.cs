@@ -8,12 +8,15 @@ namespace Kolokwium
 {
     class Line
     {
-        Point X, Y;
+      public  Point X, Y;
+       public  int x1, x2, y1, y2;
 
-        Line(Point x, Point y)
+      public  Line(Point first, Point second)
         {
-            X = x;
-            Y = y;
+            x1 = first.x;
+            y1 = first.y;
+            x2 = second.x;
+            y2 = second.y;
         }
     }
 }
