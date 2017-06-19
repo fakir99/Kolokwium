@@ -8,7 +8,8 @@ namespace Kolokwium
 {
     class Point
     {
-        public int x, y;
+        public int x { get; set; }
+        public int y { get; set; }
  
       public Point(int _x, int _y)
         {
